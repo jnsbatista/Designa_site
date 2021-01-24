@@ -1,0 +1,373 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* COLORS */
+
+.roxo {
+  color: #7518c4;
+
+  text-shadow: 0px 4px 4px #60c8ff;
+}
+
+.Purple {
+  /* Purple  */
+  color: #b311cd;
+}
+
+.yellow {
+  /* Yellow  */
+  color: #fdcb21;
+  text-shadow: 0px 4px 4px rgba(179, 17, 205, 0.5);
+}
+
+.blue {
+  color: #60c8ff;
+}
+
+/* //COLORS */
+
+h1,
+.h1 {
+  /* h1 */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+}
+
+h2,
+.h2 {
+  /* H2 */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  /* h3 */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+/* HEADER AND NAV */
+
+.navbar {
+  background-color: #b311cd;
+  position: fixed !important;
+  width: 100%;
+  z-index: 1000;
+}
+
+.yellow-bottom {
+  background-color: #fdcb21;
+  width: 200px;
+  color: #000000 !important;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.yellow-bottom-2 {
+  background-color: #fdcb21;
+  width: 200px;
+  height: 40px;
+  color: #000000 !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.yellow-bottom-2 a {
+  text-decoration: none;
+  color: #000000 !important;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.logo {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.nav-item a {
+  color: white !important;
+}
+
+.yellow-bottom-align a {
+  color: #000000 !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.bg-img-1 {
+  background-image: url(bg.svg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  z-index: 0;
+  bottom: 0;
+  left: auto;
+  background-repeat: no-repeat;
+}
+
+.bg-sobrepor {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(
+    243.8deg,
+    rgba(132, 217, 239, 0.6) 0.84%,
+    rgba(95, 184, 228, 0.6) 48.68%,
+    rgba(129, 61, 174, 0.6) 72.73%,
+    rgba(100, 12, 132, 0.6) 102.9%
+  );
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.home-text-purple {
+  padding-top: 8rem;
+  z-index: 2 !important;
+  position: relative;
+  text-align: center;
+}
+
+.home-text-yellow {
+  padding-top: 2rem;
+  z-index: 2 !important;
+  position: relative;
+  text-align: center;
+}
+.home-text-bottom {
+  padding-top: 2rem;
+  z-index: 2 !important;
+  position: relative;
+  text-align: center;
+}
+
+.home-text-area {
+  height: 100vh;
+}
+
+/* // HEADER AND NAV */
+
+/* BEIJA FLOR */
+
+.bj-sol {
+  display: block;
+  width: 30rem;
+  height: 24.6rem;
+  background: url(bj-sol.svg);
+  background-size: 30rem 24.6rem;
+}
+
+/* // BEIJA FLOR */
+
+/* VIDEO */
+
+.video-retangulo {
+  height: 60vh;
+  background-color: #c4c4c4;
+  width: 100%;
+}
+
+.video-player {
+  display: block;
+  width: 3rem;
+  height: 2.46rem;
+  background: url(video-player.svg);
+  background-size: 3rem 2.46rem;
+}
+
+.video-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* border: 3px solid green; */
+}
+
+/* // VIDEO */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  h1,
+  .h1 {
+    /* h4 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  h2,
+  .h2 {
+    /* h3 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+
+    /* Purple  */
+    color: #b311cd;
+  }
+
+  h3,
+  .h3 {
+    /* h5 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  .bj-sol {
+    width: 19.5rem;
+    height: 16rem;
+    background-size: 19.5rem 16rem;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .yellow-bottom-align {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1,
+  .h1 {
+    /* h4 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  h3,
+  .h3 {
+    /* h5 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .yellow-bottom-align {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-item {
+    margin-right: 10px !important;
+  }
+  h1,
+  .h1 {
+    /* h4 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  h3,
+  .h3 {
+    /* h5 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .nav-item {
+    margin-right: 50px !important;
+  }
+  .yellow-bottom-align {
+    margin-right: 0px !important;
+  }
+  .home-text-yellow {
+    padding-top: 0rem;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .nav-item {
+    margin-right: 50px !important;
+  }
+  .yellow-bottom-align {
+    margin-right: 0px !important;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1401px) {
+  .nav-item {
+    margin-right: 50px !important;
+  }
+  .yellow-bottom-align {
+    margin-right: 0px !important;
+  }
+}
