@@ -1,218 +1,343 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link href="bootstrap.css" rel="stylesheet" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- FONTE  -->
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap.css" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+  <!-- FONTE  -->
 
-    <!-- Estilo -->
-    <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 
-    <!-- Favicon-->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://designadi.com.br/wp-content/uploads/2016/11/favicon.png"
-    />
-    <title>Designa</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container">
-          <a href="#" class="navbar-brand logo"
-            ><svg
-              width="141"
-              height="61"
-              viewBox="0 0 141 61"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <rect width="141" height="61" fill="url(#pattern0)" />
-              <defs>
-                <pattern
-                  id="pattern0"
-                  patternContentUnits="objectBoundingBox"
-                  width="1"
-                  height="1"
-                >
-                  <use
-                    xlink:href="#image0"
-                    transform="scale(0.0070922 0.0163934)"
-                  />
-                </pattern>
-                <image
-                  id="image0"
-                  width="141"
-                  height="61"
-                  xlink:href="data:image/png;base64,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"
-                />
-              </defs>
-            </svg>
-          </a>
+  <!-- Estilo -->
+  <link rel="stylesheet" href="style.css" />
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav-target"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="nav-target"
-          >
-            <ul class="navbar-nav" style="text-align: center">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Serviços</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projetos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Depoimentos</a>
-              </li>
-              <li class="nav-item yellow-bottom-align">
-                <a class="nav-link yellow-bottom" href="#">Contato</a>
-              </li>
-            </ul>
-            <!-- <div class="yellow-bottom d-md-none d-lg-block"></div> -->
-          </div>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="https://designadi.com.br/wp-content/uploads/2016/11/favicon.png" />
+  <title>Designa</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand logo"><svg width="141" height="61" viewBox="0 0 141 61" fill="none"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="141" height="61" fill="url(#pattern0)" />
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0" transform="scale(0.0070922 0.0163934)" />
+              </pattern>
+              <image id="image0" width="141" height="61"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAA9CAYAAACQlOrQAAAIjUlEQVR4Ae2dZ8hdRRCGY40mdk2siN0o9oqKXbFjBfVPVFREUaJix44KdgR7xRoLNmyoP8RosHexxBp7j73rIy/Ogb17d0+757aPPfBxzu6Zmd2Zfe/WmfONAu4GTgBmHtXBBczbAXtiHSYLADvy//UjcBUwf536A5cClwAz1eFPPENmAeBVA45ufwD3AytXUQNYEvgXmA6sUYU30Q6hBYANHNC4j88B25VVCbjPmP9KvU5Zqw0xHfCgixbv+UPg6CL1gFmBbx1e8a1ZxJfeD6kFgNmA95wGDz1+B1wIzBVTE9gU+Mdh/hO4OM11YhYb8nxgQUDAKLp+A+4Alg6pDFwWEPABsE6IPuUNuQWAVYFfA40eyvobmAps6KsNvBNg0CQ79Tq+sUZCGtgW0GS2yvUasF+mv62m1COFLg2Da2e06T5CLAAcGmrtEnlfAmfapPiAHHrNda4fIeZKamQWiMxNcnDQ8uoX4AbgsZbc9sTjWXl17sBCwO7A6cC1BvZFYrKAeYDNgUOAi4B7gGeAW4B9gQVivCm/pAWAR9rbuVKO5j1F19uahJes0ihNwAENh7HhT+V9Y3UXaN8E1ANqTuVeH9kcKzihL1ufROdZQEtlM7pr7G486xhjV6/4tiSwGvBDBxX4HLgGWKlNeMpozgLWpcvY3b60v3NjbE8H2KLCys6t69fAzcC6zVklSSq0ALAMoN6gF9f7wFJupYCJgCbPVS6BcF9XTnrusQWATWo0XJVGdmk1/zhIKgJHeLvMLl3e81U9NlEqLmQBW2HkNVTT7zThrXPptL0jH6GQ/imvpgWAg80Nok5j9oJHw1LbLnVNdRNbUxYATuxF69cs466m9ExyGraAbajVbNeusu3WsKpJXJMWMFeJriKgonBt+CWX0yYbuRuygKsrNmw3yZ/pho5JZhcsANzZTSRUkH1yF9RLIrtlAeDRCo3bDVI5tkcPK7uld5LboQXMKasbgCgj8+MOq5/Y+2EBO+B8uUwLd4Hmpn7onMpswALmpP56F0BRJHL7BqqfRPTLAsDsJaIbikBQ5b2cvtJSu18N3lS5CnUBdGLdi+vJpurdhBxgDrm8NiFLMoA5m5I18HLkPtkjJ65jQ8YADgsgVmE68ug7S75CIT7lldhGaOnZgLHAGYA8AtXzaaNRURmnhGLkLbBwi5zy17YPNEieztO+MG/E4Lma6fpuTCdgI2BGrLwsH3gJeDpL9+1uxvw90IBNZMmgQXdRM+QTNlxqyNTf4sAOwL3Ax3L5CBnGQCMn+Yyv5e7zALcBzwKr2IJgtDXUw8AKAXpFowZBAxwH/GxnfAorUvTqcsCRlr93QF72A5nsv1O6DGiAjQHFqMnprv9Oa+bI9WITKPFkPBwykhlKhpyS816+OvIfbnMoN9CcHuN184FxVqct3fy851hPA2xlwAiG+QCrA/P5su0HoumAnOX2D7wv7GmA24Hj7Ud+oy+jb2lgUoFTuIeJ3KS60pZhwlXMDBkFjWhtU/JSl8/ytctdFjQr2RASDVkOyG/raayH0hBzjE9flM50Bfay4bHlyx9FPQ2whPGNt7g1BU0uXFRuz94Di1lXnouIgpdvaXmfV+nMkAU0OwPTfJqKPc0swFd2gFtqAhzqaaw31nA71q9PUdrVFbjSIjbmyPhKgEbzsVsden0F5KQsPTB3TbgKgBF7Lc+8uYsUcQ0Zo3UaaoxLY6B5Cjg/8NfyKxafHL+ANwwM1wHb5HkPRkCzSwjAbr1iz66uWm0ZaC7P6PNAA2j+JdBv6tBvD3xa9MPM6Ht2Bz6JoSInX8qNK1NJ15AxepsYq7iWT8AZaJ60VZZWWu7fhBx5Csa7CfjethyOCNFGQLOnGjtEn+UBJwPnZens7uuqMB0bbvYQTQFo9hHgM1lGP7NNivd08/v6bON31ZjxGRpvy1bcN2SIz2LXp/vvqgxPPq/Sturaw77EMcmniYBmgsXRj/bpszRwNnBFls7uIV0VX2/gXaoANM8LiIDKd//0SbypWRl9v+sjADm9SeiVguQqBbmFDOkrbkvltpVCp6DJyrHl82NZOrtHQKO5kZa7B2Z0/r0KaMRrsWSaBmwW2qexL6EpPEgrr9Cffthr+fXoS9pWUSFw+HkK7dUwsXrVihaBxuKpNIws5suuAhpgDDDel6G0fUruIf9dCDRGr95JPeqKPo+9L93TGL125hX6/HgENIpjb1s9ZmXrQw3AdVm6r3dgso+OQFoTyyXqVtRA42/uLWqTVJWvPZrgQaeBJrq55y71JQNQJOdBwLI29OrrYlqZaenaFnIcA410td7kJ+Aom5uoB1pY+y+2IdnmbJb3A7G9He1Qt+wIA7KFYsyiPbiNCOJdqG47NMYHvBIAiZ/1VScFmiF9mfoVTwHODW3qZeUZaHxeN92yk2yrJ3278DPbnBNYXgCCju55oFEdbHf2ITs+0DJcxx/qLYIfz8wDjclT6JEPmtN0NJHpHLubn9Txsfc9y7cu2G2E2PPWPatUQwVpOyBvuV21mDLbC1VlDh29GVXumWWu+4dOwVTh5i2gMb4MWoxGB3fRo4Lma5ckDqQFgHMqgEakEwdSkVSp3lmghgP6E72rXSppIC0AaDlZ5dKyMPdwciAVTZVqxgLAelXQ4tAe1UwNkpShs4CdcThYKP348tApmyrcjAUAHY7VuXSc0HIS3UyNkpSBt0DNjy0KZPLtiJ7+DrziqYL1LACsX6eLMb+QZeuVmriG2gLABTVAo3OXnYZa8VT5+hawA7yquLmgfomJc+gtYO4DVUCTNvWGvtU7VMDcEcqCJk18O7T3iGCXu4D5rBYBRz4vy48IpZMSnVsAODWCGLlKTAMOb9IXpfMaJwkDYQH71zoZdhTj/UD6H5cD0TSDWwn9y2ZA/4JZUX2VowkHV7NUs2SBZIE2C/wHCiNQJ7DsQ3YAAAAASUVORK5CYII=" />
+            </defs>
+          </svg>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-target"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="nav-target">
+          <ul class="navbar-nav" style="text-align: center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Depoimentos</a>
+            </li>
+            <li class="nav-item yellow-bottom-align">
+              <a class="nav-link yellow-bottom" href="#">Contato</a>
+            </li>
+          </ul>
+          <!-- <div class="yellow-bottom d-md-none d-lg-block"></div> -->
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <section>
-      <div class="bg-img-1">
-        <div class="bg-sobrepor"></div>
-        <div class="home-text-area col-10 col-sm-8 col-md-6 col-lg-5 mx-auto">
-          <div class="home-text-purple roxo">
-            <h1>
-              Quer saber como chamar a atenção do seu público para o seus
-              cursos?
-            </h1>
-          </div>
-          <div class="home-text-yellow yellow">
-            <h3>A Designa sabe como!</h3>
-          </div>
-          <div class="row">
-            <div class="col-md-8 mx-auto">
-              <div class="home-text-bottom">
-                <div class="yellow-bottom-2 mx-auto">
-                  <a href="#"
-                    ><span style="vertical-align: -webkit-baseline-middle"
-                      >Contato</span
-                    ></a
-                  >
-                </div>
+  <section>
+    <div class="bg-img-1">
+      <div class="bg-sobrepor"></div>
+      <div class="home-text-area col-10 col-sm-8 col-md-6 col-lg-5 mx-auto">
+        <div class="home-text-purple roxo">
+          <h1>
+            Quer saber como chamar a atenção do seu público para o seus
+            cursos?
+          </h1>
+        </div>
+        <div class="home-text-yellow yellow">
+          <h3>A Designa sabe como!</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div class="home-text-bottom">
+              <div class="yellow-bottom-2 mx-auto">
+                <a href="#"><span style="vertical-align: -webkit-baseline-middle">Contato</span></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-8 mx-auto bj-sol">
-            <!-- <img src="bj-sol.svg" alt=""> -->
-          </div>
-          <div class="mt-5 col-lg-6 col-8 mx-auto">
-            <p>
-              O desenho instrucional de um curso online é o fará com que o
-              cursista termine-o feliz e satisfeito ou que abandone e faça
-              terríveis críticas na internet. Assim, ele pode ser o grande
-              diferencial no seu projeto. Por isso, somos uma empresa
-              especializada em design instrucional que tem como foco tornar
-              cursos online motivantes e desafiadores para o público final, o
-              cursista. Para isso, temos uma equipe com profissionais
-              qualificados que organizam e desenvolvem estratégias de
-              aprendizagem de maneira didática, especificamente para o perfil do
-              seu cursista.
-            </p>
-
-            <p>
-              Somos criativos, motivados e totalmente comprometidos com as
-              experiências de aprendizado eficazes e significativos.
-            </p>
-          </div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-10 mx-auto bj-sol">
+          <!-- <img src="bj-sol.svg" alt=""> -->
         </div>
-        <div class="row">
-          <div class="mt-3 mb-3 col-12 mx-auto purple">
-            <h2>Conheça a </br> Designa</h2>
-          </div>
+        <div class="mt-5 col-lg-6 col-10 mx-auto">
+          <p>
+            O desenho instrucional de um curso online é o fará com que o
+            cursista termine-o feliz e satisfeito ou que abandone e faça
+            terríveis críticas na internet. Assim, ele pode ser o grande
+            diferencial no seu projeto. Por isso, somos uma empresa
+            especializada em design instrucional que tem como foco tornar
+            cursos online motivantes e desafiadores para o público final, o
+            cursista. Para isso, temos uma equipe com profissionais
+            qualificados que organizam e desenvolvem estratégias de
+            aprendizagem de maneira didática, especificamente para o perfil do
+            seu cursista.
+          </p>
+
+          <p>
+            Somos criativos, motivados e totalmente comprometidos com as
+            experiências de aprendizado eficazes e significativos.
+          </p>
         </div>
       </div>
-    </section>
+      <div class="row">
+        <div class="mt-3 mb-3 mx-auto purple">
+          <h2>Conheça a </br> Designa</h2>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<!-- VIDEO SECTION -->
-    <section>
-        <div class="video-retangulo">
-            <div class="video-center">
-              <div class="row">
-                <div class="blue d-none d-lg-block col-12">
-                  <h3>Vídeos</h3>
-                </div>
-                <div class="col-12 my-auto mx-auto video-player"></div>
+  <!-- VIDEO SECTION -->
+  <section>
+    <div class="video-retangulo">
+      <div class="video-center">
+        <div class="row">
+          <div class="blue d-none d-lg-block ">
+            <h3>Vídeos</h3>
+          </div>
+          <div class=" my-auto mx-auto video-player"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVIÇOS SECTION  -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto mt-5 mb-5 purple">
+          <h2>Serviços</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-10 mx-auto blue">
+          <h3 style="text-align: start;">Desenvolvimento
+            </br>de cursos online</h3>
+          <p>Criar um curso online não é uma tarefa simples. Mas se você pode contar com uma
+            equipe experiente e qualificada fica bem mais fácil!
+            Temos todo o cuidado em estudar o perfil do cursista para poder direcionar a metodologia ideal para aquele
+            público, afinal nem todo mundo aprende da mesma forma, não é mesmo?</p>
+        </div>
+        <div class="col-lg-7 col-md-6 col-10 mx-auto desenvolvimento-de-curso"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 d-none d-lg-block col-10 mx-auto equipe-desig-inst"></div>
+        <div class="col-lg-5 col-10 mx-auto mt-5 blue">
+          <div class="row">
+            <h3 style="text-align: start;">Capacitação de equipe</br> de design instrucional</h3>
+            <p>Sabemos que as formações em design instrucional são bem diversas e que cada
+              instituição, empresa ou projeto tem características únicas. Por isso, a Designa é qualificada para
+              capacitar equipes de DIs de acordo com cada necessidade, seja para um projeto específico ou para alinhar a
+              equipe com a metodologia da instituição.</p>
+          </div>
+        </div>
+        <div class="col-lg-7 d-block d-lg-none col-10 mx-auto equipe-desig-inst"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-10 mx-auto mt-5 blue">
+          <h3 style="text-align: start;">Análise de design</br> instrucional em</br> diversos recursos</h3>
+          <p>Possuímos uma equipe de designers instrucionais preparada para atender qualquer tipo de projeto. Por
+            termos diferentes níveis de DIs na equipe, sênior, master e júnior, nosso olhar é mais atento as várias
+            revisões que desempenhamos antes de encaminhar o material para a validação.</p>
+        </div>
+        <div class="d-block d-lg-none mx-auto">
+          <div class="row">
+            <div class="col-6 mx-auto">
+              <div class="mx-auto canvas-img img-analise-section-maior-m"></div>
+            </div>
+            <div class="col-6 mx-auto">
+              <div class="mx-auto moodle-img img-analise-section-maior-m"></div>
             </div>
           </div>
         </div>
-    </section>
-
-
-<!-- SERVIÇOS SECTION  -->
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-10 mx-auto mt-5 mb-5 purple">
-        <h2>Serviços</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-5 col-8 mx-auto blue">
-          <h3 style="text-align: start;">Desenvolvimento
-          </br>de cursos online</h3>
-          <p style="color: #000000;">Criar um curso online não é uma tarefa simples. Mas se você pode contar com uma equipe experiente e qualificada fica bem mais fácil!
-            Temos todo o cuidado em estudar o perfil do cursista para poder direcionar a metodologia ideal para aquele público, afinal nem todo mundo aprende da mesma forma, não é mesmo?</p>
-      </div>
-      <div class="col-lg-7 col-md-6 col-8 mx-auto desenvolvimento-de-curso"></div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">      
-      <div class="col-lg-7 d-none d-lg-block col-8 mx-auto equipe-desig-inst"></div>
-      <div class="col-lg-5 col-8 mx-auto mt-5 blue">
-        <div class="row">
-          <h3 style="text-align: start;">Capacitação de equipe</br> de design instrucional</h3>
-          <p style="color: #000000;">Sabemos que as formações em design instrucional são bem diversas e que cada instituição, empresa ou projeto tem características únicas. Por isso, a Designa é qualificada para capacitar equipes de DIs de acordo com cada necessidade, seja para um projeto específico ou para alinhar a equipe com a metodologia da instituição.</p>
+        <div class="col-lg-7 col-md-10 mx-auto ">
+          <div class="row">
+            <div class="col-6 mx-auto">
+              <div class="mx-auto materiais-responsivos-img img-analise-section-maior"></div>
+              <div class="grey">
+                <h5>materiais responsivos</h5>
+              </div>
+            </div>
+            <div class="col-6 mx-auto">
+              <div class="mx-auto especialidade-em-cursos-online-img img-analise-section-maior"></div>
+              <div class="grey">
+                <h5>Especialidade em cursos online</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-block d-lg-none mx-auto">
+          <div class="row">
+            <div class="col-6 mx-auto">
+              <div class="mx-auto materiais-audiovisual-img img-analise-section-maior"></div>
+              <div class="grey">
+                <h5>Material audiovisual</h5>
+              </div>
+            </div>
+            <div class="col-6 mx-auto">
+              <div class="mx-auto ebook-img img-analise-section-maior"></div>
+              <div class="grey">
+                <h5>ebooks interativos</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-7 d-block d-lg-none col-8 mx-auto equipe-desig-inst"></div>
     </div>
-</div>
-</section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div class="container d-none d-lg-block">
+      <div class="row">
+        <div class="col-lg-5 mx-auto">
+          <div class="row">
+            <div class="col-6 mx-auto">
+              <div class="mx-auto canvas-img img-analise-section-maior-m"></div>
+              <div class="mx-auto articulate-img img-analise-section-menor"></div>
+            </div>
+            <div class="col-6 mx-auto">
+              <div class="mx-auto moodle-img img-analise-section-maior-m"></div>
+              <div class="mx-auto storyline-img img-analise-section-menor"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 mx-auto mt-5">
+          <div class="row">
+            <div class="col-6 mx-auto">
+              <div class="mx-auto materiais-audiovisual-img img-analise-section-maior"></div>
+              <div class="grey">
+                <h5>Material audiovisual</h5>
+              </div>
+            </div>
+            <div class="col-6 mx-auto">
+              <div class="mx-auto ebook-img img-analise-section-maior"></div>
+              <div class="grey">
+                <h5>ebooks interativos</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 d-none d-lg-block col-10 mx-auto consultoria-img"></div>
+        <div class="col-lg-5 col-10 mx-auto mt-5 blue">
+          <div class="row">
+            <h3 style="text-align: start;">Consultoria e</br>assessoria para EaD</h3>
+            <p>Possuímos uma equipe de designers instrucionais preparada para atender qualquer tipo de projeto. Por
+              termos diferentes níveis de DIs na equipe, sênior, master e júnior, nosso olhar é mais atento as várias
+              revisões que desempenhamos antes de encaminhar o material para a validação.</p>
+          </div>
+        </div>
+        <div class="col-lg-7 d-block d-lg-none col-10 mx-auto consultoria-img"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPRESAS SECTION -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="mt-3 mb-3 mx-auto purple">
+          <h2>Empresas que confiaram</br> na Designa</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col- mx-auto">
+          <div class="row">
+            <div class="d-none d-lg-block d-lg-2 mx-auto evolke-img empresas"></div>
+            <div class="d-none d-lg-block d-lg-2 mx-auto crianca-brasil-img empresas"></div>
+            <div class="d-none d-md-block col-md-3 d-lg-2 mx-auto evolke-img empresas"></div>
+            <div class="d-none d-md-block col-md-3 d-lg-2 mx-auto crianca-brasil-img empresas"></div>
+            <div class="col-6 col-md-3 d-lg-2 mx-auto evolke-img empresas"></div>
+            <div class="col-6 col-md-3 d-lg-2 mx-auto crianca-brasil-img empresas"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS SECTINO -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="mt-3 mb-3 mx-auto purple">
+          <h2>Nossos projetos</h2>
+        </div>
+        <div class="d-none d-md-block col-md-7 mx-auto mb-3 grey" style="text-align: center;">
+          <p>Reunimos aqui alguns exemplos de materiais desenvolvidos pela Designa, entre animações em 2D e 3D, vídeos
+            com apresentador, livros interativos, scorms, ebooks e ambientes virtuais de aprendizagem aplicados em
+            desktop e smartphone. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section>
+    <div class="video-retangulo">
+      <div class="video-center">
+        <div class="row">
+          <div class="blue">
+            <h3>Vídeos</h3>
+          </div>
+          <div class="col-10 col-md-7 col-lg-5 mx-auto grey" style="text-align: center;">
+            <p>Clique no play e veja alguns exemplos de vídeos com apresentador e em animação 2D desenvolvidos por nossa
+              equipe.</p>
+          </div>
+          <div class="row">
+            <div class="my-auto mx-auto video-player"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

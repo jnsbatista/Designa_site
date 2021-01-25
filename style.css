@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* COLORS */
 
 .roxo {
@@ -25,6 +30,11 @@
 
 .blue {
   color: #60c8ff;
+}
+
+.grey {
+  /* Grey */
+  color: #5C5C5C;
 }
 
 /* //COLORS */
@@ -61,6 +71,18 @@ h3,
   font-size: 36px;
   line-height: 44px;
   text-align: center;
+}
+
+h5,
+.h5 {
+  /* h5 */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* HEADER AND NAV */
@@ -137,13 +159,11 @@ h3,
   top: 0;
   left: 0;
   position: absolute;
-  background: linear-gradient(
-    243.8deg,
-    rgba(132, 217, 239, 0.6) 0.84%,
-    rgba(95, 184, 228, 0.6) 48.68%,
-    rgba(129, 61, 174, 0.6) 72.73%,
-    rgba(100, 12, 132, 0.6) 102.9%
-  );
+  background: linear-gradient(243.8deg,
+      rgba(132, 217, 239, 0.6) 0.84%,
+      rgba(95, 184, 228, 0.6) 48.68%,
+      rgba(129, 61, 174, 0.6) 72.73%,
+      rgba(100, 12, 132, 0.6) 102.9%);
   transform: matrix(-1, 0, 0, 1, 0, 0);
   width: 100%;
   height: 100vh;
@@ -163,6 +183,7 @@ h3,
   position: relative;
   text-align: center;
 }
+
 .home-text-bottom {
   padding-top: 2rem;
   z-index: 2 !important;
@@ -221,8 +242,7 @@ h3,
   background: url(desenvilvimento-de-curso.svg);
   background-size: 34.74rem 30.88rem;
   position: relative;
-  right: 5rem;
-  top: 5rem;
+  right: 3rem;
 }
 
 /* Capacitação de equipe de design instrucional  */
@@ -234,8 +254,95 @@ h3,
   background-size: 34.74rem 30.88rem;
 }
 
+/* PARAGRAFO COR */
+
+.blue p {
+  color: #000000;
+}
+
+/* ANÁLIE DE DESIGN INSTRUCIONAL EM DIVERSOS RECURSOS */
+
+.materiais-responsivos-img {
+  background: url(materiais-responsi.svg);
+}
+
+/* Especialidade em cursos online */
+.especialidade-em-cursos-online-img {
+  background: url(especialidade-em-cursos.svg);
+}
+
+.canvas-img {
+  background: url(canvas.svg);
+}
+
+.articulate-img {
+  background: url(articulate.svg);
+}
+
+.moodle-img {
+  background: url(moodle.svg);
+}
+
+.storyline-img {
+  background: url(storyline-360.svg);
+}
+
+.materiais-audiovisual-img{
+  background: url(material-audiovisual-img.svg);
+}
+
+.consultoria-img{
+  display: block;
+  width: 34.74rem;
+  height: 30.88rem;
+  background: url(consultoria.svg);
+  background-size: 34.74rem 30.88rem;  
+}
+
+.ebook-img{
+  background: url(ebook.svg);
+}
+
+.evolke-img{
+  background: url(evolke.svg);
+}
+
+.crianca-brasil-img{
+  background: url(crianca-brasil.svg);
+}
+
+
+/* IMAGEM TAMANHO */
+.img-analise-section-maior {
+  display: block;
+  width: 13.54rem;
+  height: 12.4rem;
+  background-size: 13.54rem 12.4rem;
+}
+
+.img-analise-section-maior-m {
+  display: block;
+  width: 13.54rem;
+  height: 12.4rem;
+  background-size: 13.54rem 12.4rem;
+}
+
+.img-analise-section-menor {
+  display: block;
+  width: 9.47rem;
+  height: 8.68rem;
+  background-size: 9.47rem 8.68rem;
+}
+
+.empresas {
+  width: 9.47rem;
+  height: 8.68rem;
+  background-size: 9.47rem 8.68rem;
+}
+
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
   h1,
   .h1 {
     /* h4 */
@@ -278,6 +385,13 @@ h3,
     /* color: #ffffff; */
   }
 
+  h5,
+  .h5 {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 150%;
+  }
+
   .bj-sol {
     width: 19.5rem;
     height: 16rem;
@@ -300,6 +414,32 @@ h3,
     right: 0;
     top: 0;
   }
+
+  .consultoria-img{
+    width: 16.17rem !important;
+    height: 13.26rem !important;
+    background-size: 16.17rem 13.26rem !important;
+    right: 0;
+    top: 0; 
+  }
+
+  /* DIMEN IMAGENS */
+  .img-analise-section-maior {
+    width: 9.47rem;
+    height: 8.68rem;
+    background-size: 9.47rem 8.68rem;
+  }
+  .img-analise-section-maior-m {
+    width: 7.57rem;
+    height: 6.94rem;
+    background-size: 7.57rem 6.94rem;
+  }
+  .empresas {
+    width: 6.81rem !important;
+    height: 6.24rem !important;
+    background-size: 6.81rem 6.24rem !important;
+  }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -308,6 +448,7 @@ h3,
     margin-left: auto;
     margin-right: auto;
   }
+
   h1,
   .h1 {
     /* h4 */
@@ -350,6 +491,18 @@ h3,
     height: 18.96rem;
     background-size: 32.11rem 18.96rem;
     right: 0;
+  }
+
+  .consultoria-img{
+    width: 32.11rem;
+    height: 18.96rem;
+    background-size: 32.11rem 18.96rem;
+    right: 0; 
+  }
+  .empresas {
+    width: 8.52rem;
+    height: 7.8rem;
+    background-size: 8.52rem 7.8rem;
   }
 }
 
@@ -359,9 +512,11 @@ h3,
     margin-left: auto;
     margin-right: auto;
   }
+
   .nav-item {
     margin-right: 10px !important;
   }
+
   h1,
   .h1 {
     /* h4 */
@@ -397,6 +552,7 @@ h3,
     right: 0;
     top: 0;
   }
+
   /* Capacitação de equipe de design instrucional  */
   .equipe-desig-inst {
     width: 32.11rem;
@@ -405,6 +561,19 @@ h3,
     right: 0;
     top: 0;
   }
+
+  .consultoria-img{
+    width: 32.11rem;
+    height: 18.96rem;
+    background-size: 32.11rem 18.96rem;
+    right: 0;
+    top: 0; 
+  }
+  .empresas {
+    width: 8.52rem;
+    height: 7.8rem;
+    background-size: 8.52rem 7.8rem;
+  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -412,11 +581,32 @@ h3,
   .nav-item {
     margin-right: 50px !important;
   }
+
   .yellow-bottom-align {
     margin-right: 0px !important;
   }
+
   .home-text-yellow {
     padding-top: 0rem;
+  }
+
+  /* DIMEN IMAGENS */
+  .img-analise-section-menor {
+    width: 7.57rem;
+    height: 6.94rem;
+    background-size: 7.57rem 6.94rem;
+  }
+
+  .img-analise-section-maior-m {
+    width: 10.82rem;
+    height: 9.92rem;
+    background-size: 10.82rem 9.92rem;
+  }
+
+  .empresas {
+    width: 8.52rem;
+    height: 7.8rem;
+    background-size: 8.52rem 7.8rem;
   }
 }
 
@@ -425,9 +615,18 @@ h3,
   .nav-item {
     margin-right: 50px !important;
   }
+
   .yellow-bottom-align {
     margin-right: 0px !important;
   }
+
+  /* DIMEN IMAGENS */
+  .img-analise-section-menor {
+    width: 7.57rem;
+    height: 6.94rem;
+    background-size: 7.57rem 6.94rem;
+  }
+
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -435,6 +634,7 @@ h3,
   .nav-item {
     margin-right: 50px !important;
   }
+
   .yellow-bottom-align {
     margin-right: 0px !important;
   }
