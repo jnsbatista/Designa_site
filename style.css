@@ -32,6 +32,10 @@
   color: #60c8ff;
 }
 
+.blue-dark {
+  color: #0E9CE7;
+}
+
 .grey {
   /* Grey */
   color: #5C5C5C;
@@ -152,6 +156,7 @@ h5,
   z-index: 0;
   bottom: 0;
   left: auto;
+  right: auto;
   background-repeat: no-repeat;
 }
 
@@ -260,6 +265,10 @@ h5,
   color: #000000;
 }
 
+.blue-dark p {
+  color: #000000;
+}
+
 /* ANÁLIE DE DESIGN INSTRUCIONAL EM DIVERSOS RECURSOS */
 
 .materiais-responsivos-img {
@@ -287,30 +296,45 @@ h5,
   background: url(storyline-360.svg);
 }
 
-.materiais-audiovisual-img{
+.materiais-audiovisual-img {
   background: url(material-audiovisual-img.svg);
 }
 
-.consultoria-img{
+.consultoria-img {
   display: block;
   width: 34.74rem;
   height: 30.88rem;
   background: url(consultoria.svg);
-  background-size: 34.74rem 30.88rem;  
+  background-size: 34.74rem 30.88rem;
 }
 
-.ebook-img{
+.ebook-img {
   background: url(ebook.svg);
 }
 
-.evolke-img{
+.evolke-img {
   background: url(evolke.svg);
 }
 
-.crianca-brasil-img{
+.crianca-brasil-img {
   background: url(crianca-brasil.svg);
 }
 
+.next-img {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background: url(next-bottom.svg);
+  background-size: 3rem 3rem;
+}
+
+.prev-img {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background: url(pev-bottom.svg);
+  background-size: 3rem 3rem;
+}
 
 /* IMAGEM TAMANHO */
 .img-analise-section-maior {
@@ -338,6 +362,81 @@ h5,
   width: 9.47rem;
   height: 8.68rem;
   background-size: 9.47rem 8.68rem;
+}
+
+/* LIVRO INTERATIVO */
+.quadrado-cinza {
+  height: 18rem;
+  background-color: #c4c4c4;
+  width: 18rem;
+}
+
+/* EBOOK SECTION */
+.ebook-section {
+  background: url(ebook-section.svg);
+  width: auto;
+  height: auto;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ambiente virtual de aprendizagem */
+.ambev-section {
+  max-width: 100%;
+  height: 70vh;
+  background-color: #7518C4;
+}
+
+.ambev-section p {
+  color: #fff !important;
+}
+
+.ambev-section-img {
+  display: block;
+  width: 34.74rem;
+  height: 30.88rem;
+  background: url(compter.svg);
+  background-size: 34.74rem 30.88rem;
+  position: absolute;
+  right: 0;
+}
+
+/* DEPOIMENTOS */
+.depoimentos-box {
+  /* Rectangle 24 */
+
+  /* position: absolute;
+  width: 882px;
+  height: 281px;
+  left: 284px;
+  top: 9606px; */
+
+  background: #FFFFFF;
+  /* Blue 1 */
+  border: 1px solid #60C8FF;
+  box-sizing: border-box;
+  border-radius: 50px;
+
+}
+
+@media (max-width: 420px) {
+  .ambev-section-img {
+    width: 16.1rem !important;
+    height: 9.8rem !important;
+    background-size: 16.1rem 9.8rem !important;
+    position: relative;
+    top: 0;
+    bottom: 0 !important;
+    right: 0;
+  }
+
+  .ambev-section {
+    height: 70vh;
+  }
 }
 
 /* // X-Small devices (portrait phones, less than 576px) */
@@ -415,29 +514,45 @@ h5,
     top: 0;
   }
 
-  .consultoria-img{
+  .consultoria-img {
     width: 16.17rem !important;
     height: 13.26rem !important;
     background-size: 16.17rem 13.26rem !important;
     right: 0;
-    top: 0; 
+    top: 0;
   }
 
   /* DIMEN IMAGENS */
   .img-analise-section-maior {
-    width: 9.47rem;
-    height: 8.68rem;
-    background-size: 9.47rem 8.68rem;
+    width: 7.57rem;
+    height: 6.94rem;
+    background-size: 7.57rem 6.94rem;
   }
+
   .img-analise-section-maior-m {
     width: 7.57rem;
     height: 6.94rem;
     background-size: 7.57rem 6.94rem;
   }
+
   .empresas {
     width: 6.81rem !important;
     height: 6.24rem !important;
     background-size: 6.81rem 6.24rem !important;
+  }
+
+  .ambev-section-img {
+    width: 23rem;
+    height: 14rem;
+    background-size: 23rem 14rem;
+    position: relative;
+    top: 0;
+    bottom: 0 !important;
+    right: 0;
+  }
+
+  .ambev-section {
+    height: 70vh !important;
   }
 
 }
@@ -493,17 +608,31 @@ h5,
     right: 0;
   }
 
-  .consultoria-img{
+  .consultoria-img {
     width: 32.11rem;
     height: 18.96rem;
     background-size: 32.11rem 18.96rem;
-    right: 0; 
+    right: 0;
   }
+
   .empresas {
     width: 8.52rem;
     height: 7.8rem;
     background-size: 8.52rem 7.8rem;
   }
+
+  .ambev-section-img {
+    width: 23rem;
+    height: 15rem;
+    background-size: 23rem 15rem;
+    bottom: -5rem;
+    right: 0;
+  }
+
+  .ambev-section {
+    height: 60vh;
+  }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -562,17 +691,24 @@ h5,
     top: 0;
   }
 
-  .consultoria-img{
+  .consultoria-img {
     width: 32.11rem;
     height: 18.96rem;
     background-size: 32.11rem 18.96rem;
     right: 0;
-    top: 0; 
+    top: 0;
   }
+
   .empresas {
     width: 8.52rem;
     height: 7.8rem;
     background-size: 8.52rem 7.8rem;
+  }
+
+  /* LIVRO INTERATIVO */
+  .quadrado-cinza {
+    height: 15rem !important;
+    width: 15rem !important;
   }
 }
 
@@ -608,6 +744,12 @@ h5,
     height: 7.8rem;
     background-size: 8.52rem 7.8rem;
   }
+
+  /* LIVRO INTERATIVO */
+  .quadrado-cinza {
+    height: 23rem;
+    width: 23rem;
+  }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -627,6 +769,12 @@ h5,
     background-size: 7.57rem 6.94rem;
   }
 
+  /* LIVRO INTERATIVO */
+  .quadrado-cinza {
+    height: 25rem;
+    width: 25rem;
+  }
+
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -637,5 +785,11 @@ h5,
 
   .yellow-bottom-align {
     margin-right: 0px !important;
+  }
+
+  /* LIVRO INTERATIVO */
+  .quadrado-cinza {
+    height: 25rem;
+    width: 25rem;
   }
 }
