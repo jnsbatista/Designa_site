@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -34,12 +33,12 @@
 }
 
 .blue-dark {
-  color: #0E9CE7;
+  color: #0e9ce7;
 }
 
 .grey {
   /* Grey */
-  color: #5C5C5C;
+  color: #5c5c5c;
 }
 
 /* //COLORS */
@@ -93,7 +92,8 @@ h5,
 /* HEADER AND NAV */
 
 .navbar {
-  background-color: #b311cd;
+  /* background-color: #b311cd; */
+  background-color: white;
   position: fixed !important;
   width: 100%;
   z-index: 1000;
@@ -137,11 +137,12 @@ h5,
 }
 
 .nav-item a {
-  color: white !important;
+  color: #b311cd !important;
 }
 
 .yellow-bottom-align a {
-  color: #000000 !important;
+  color: #fff !important;
+  /* color: #000000 !important; */
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -165,11 +166,13 @@ h5,
   top: 0;
   left: 0;
   position: absolute;
-  background: linear-gradient(243.8deg,
-      rgba(132, 217, 239, 0.6) 0.84%,
-      rgba(95, 184, 228, 0.6) 48.68%,
-      rgba(129, 61, 174, 0.6) 72.73%,
-      rgba(100, 12, 132, 0.6) 102.9%);
+  background: linear-gradient(
+    243.8deg,
+    rgba(132, 217, 239, 0.6) 0.84%,
+    rgba(95, 184, 228, 0.6) 48.68%,
+    rgba(129, 61, 174, 0.6) 72.73%,
+    rgba(100, 12, 132, 0.6) 102.9%
+  );
   transform: matrix(-1, 0, 0, 1, 0, 0);
   width: 100%;
   height: 100vh;
@@ -377,7 +380,6 @@ h5,
   background: url(imagens/ebook-section.svg);
   width: auto;
   height: auto;
-
 }
 
 img {
@@ -389,7 +391,7 @@ img {
 .ambev-section {
   max-width: 100%;
   height: 70vh;
-  background-color: #7518C4;
+  background-color: #7518c4;
 }
 
 .ambev-section p {
@@ -408,12 +410,11 @@ img {
 
 /* DEPOIMENTOS */
 .depoimentos-box {
-  background: #FFFFFF;
+  background: #ffffff;
   /* Blue 1 */
-  border: 1px solid #60C8FF;
+  border: 1px solid #60c8ff;
   box-sizing: border-box;
   border-radius: 50px;
-
 }
 
 /* FOOTER */
@@ -472,8 +473,7 @@ footer {
   text-transform: uppercase;
 
   /* Blue dark */
-  color: #0E9CE7;
-
+  color: #0e9ce7;
 }
 
 .blue-dark p {
@@ -485,8 +485,7 @@ footer {
   text-transform: none;
 
   /* Grey */
-  color: #5C5C5C;
-
+  color: #5c5c5c;
 }
 
 @media (max-width: 420px) {
@@ -517,7 +516,7 @@ footer {
     line-height: 44px;
 
     /* Purple  */
-    color: #B311CD;
+    color: #b311cd;
   }
 
   .blue-dark p {
@@ -532,11 +531,15 @@ footer {
     background-size: 14.4rem 9rem !important;
   }
 
+  /* NOVO */
+  a .imagem-logo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
   h1,
   .h1 {
     /* h4 */
@@ -667,6 +670,11 @@ footer {
     padding-right: 2rem;
   }
 
+  /* NOVO */
+  a .imagem-logo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -757,6 +765,11 @@ footer {
     background-size: 20.6rem 12.9rem;
   }
 
+  /* NOVO */
+  a .imagem-logo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -767,7 +780,7 @@ footer {
   }
 
   .nav-item {
-    margin-right: 10px !important;
+    margin-right: 0px !important;
   }
 
   h1,
@@ -840,12 +853,17 @@ footer {
     font-size: 15px;
     line-height: 140%;
   }
+
+  /* NOVO */
+  .navbar .container {
+    max-width: 100%;
+  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 993px) and (max-width: 1200px) {
   .nav-item {
-    margin-right: 50px !important;
+    margin-right: 20px !important;
   }
 
   .yellow-bottom-align {
@@ -904,7 +922,6 @@ footer {
     height: 25rem;
     width: 25rem;
   }
-
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -922,4 +939,50 @@ footer {
     height: 25rem;
     width: 25rem;
   }
+}
+
+/* NOVO */
+
+.imagem-logo {
+  height: 4rem;
+  width: auto;
+}
+
+.nav-item .nav-link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  /* Purple  */
+  color: #b311cd;
+}
+
+a .logo {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.navbar .container {
+  padding-right: 0rem;
+}
+
+.yellow-bottom-align .nav-link {
+  padding: 1.8rem 1rem;
+}
+
+.nav-item .yellow-bottom {
+  background-color: #b311cd !important;
+}
+
+.navbar .container {
+  max-width: 100%;
 }
