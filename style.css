@@ -41,6 +41,11 @@
   color: #5c5c5c;
 }
 
+.dark {
+  /* Blue dark */
+  color: #3e4046;
+}
+
 /* //COLORS */
 
 h1,
@@ -51,7 +56,7 @@ h1,
   font-weight: bold;
   font-size: 46px;
   line-height: 56px;
-  text-align: center;
+  text-align: start;
 }
 
 h2,
@@ -63,7 +68,7 @@ h2,
   font-size: 43px;
   line-height: 52px;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h3,
@@ -183,10 +188,10 @@ h5,
   padding-top: 8rem;
   z-index: 2 !important;
   position: relative;
-  text-align: center;
+  text-align: start;
 }
 
-.home-text-yellow {
+.home-text {
   padding-top: 2rem;
   z-index: 2 !important;
   position: relative;
@@ -488,6 +493,152 @@ footer {
   color: #5c5c5c;
 }
 
+/*============= NOVO================== */
+
+.imagem-logo {
+  height: 4rem;
+  width: auto;
+}
+
+.nav-item .nav-link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  /* Purple  */
+  color: #b311cd;
+}
+
+a .logo {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.navbar .container {
+  padding-right: 0rem;
+}
+
+.yellow-bottom-align .nav-link {
+  padding: 1.8rem 1rem;
+}
+
+.nav-item .yellow-bottom {
+  background-color: #b311cd !important;
+}
+
+.navbar .container {
+  max-width: 100%;
+}
+
+.home-text-1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 56px;
+
+  color: #7518c4;
+}
+
+.home-text-2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* Purple  */
+  color: #b311cd;
+}
+
+.navbar {
+  box-shadow: 0px 3px 5px #c4c4c4;
+}
+
+.navbar-dark .navbar-toggler {
+  /* color: black;
+  border-color: black; */
+  margin-right: 1rem;
+  background: #b311cd;
+  /* border-color: #b311cd; */
+  /* border: 2px solid transparent; */
+  box-shadow: 0 0 0.5em #c4c4c4;
+}
+
+.img-home {
+  z-index: 2 !important;
+  position: relative;
+  text-align: center;
+}
+
+h3,
+.h3 {
+  text-align: start;
+}
+
+.container-d {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  margin-bottom: 0.5rem;
+}
+
+.embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.embed iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.traco-azul {
+  position: relative;
+  width: 83px;
+  height: 0px;
+
+  /* Blue 1 */
+  border: 4px solid #60c8ff;
+}
+
+.titulo-preto h3 {
+  /* h3 */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+
+  /* Blue dark */
+  color: #3e4046;
+  /* position: initial; */
+}
+
+.parceiros h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  /* Blue dark */
+  color: #3e4046;
+}
+
 @media (max-width: 420px) {
   .ambev-section-img {
     width: 16.1rem !important;
@@ -536,6 +687,23 @@ footer {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
+
+  .navbar-nav {
+    margin-bottom: 1rem;
+  }
+
+  .img-home {
+    padding-top: 2rem;
+  }
+
+  .titulo-preto h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .traco-azul {
+    border: 3px solid #60c8ff;
+  }
 }
 
 /* // X-Small devices (portrait phones, less than 576px) */
@@ -548,9 +716,6 @@ footer {
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    text-align: center;
-
-    color: #ffffff;
   }
 
   h2,
@@ -675,6 +840,26 @@ footer {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
+
+  .navbar-nav {
+    margin-bottom: 1rem;
+  }
+
+  .img-home {
+    padding-top: 3rem;
+    z-index: 2 !important;
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-preto h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .traco-azul {
+    border: 3px solid #60c8ff;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -692,9 +877,6 @@ footer {
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    text-align: center;
-
-    color: #ffffff;
   }
 
   h3,
@@ -770,6 +952,26 @@ footer {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
+
+  .navbar-nav {
+    margin-bottom: 1rem;
+  }
+
+  .img-home {
+    padding-top: 7rem;
+    z-index: 2 !important;
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-preto h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .traco-azul {
+    border: 3px solid #60c8ff;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -791,9 +993,6 @@ footer {
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    text-align: center;
-
-    color: #ffffff;
   }
 
   h3,
@@ -858,6 +1057,22 @@ footer {
   .navbar .container {
     max-width: 100%;
   }
+
+  .img-home {
+    padding-top: 10rem;
+    z-index: 2 !important;
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-preto h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .traco-azul {
+    border: 3px solid #60c8ff;
+  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -870,7 +1085,7 @@ footer {
     margin-right: 0px !important;
   }
 
-  .home-text-yellow {
+  .home-text {
     padding-top: 0rem;
   }
 
@@ -898,6 +1113,22 @@ footer {
     height: 23rem;
     width: 23rem;
   }
+
+  h1,
+  .h1 {
+    font-size: 32px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 28px;
+    text-align: start;
+  }
+
+  /* NOVO */
+  .img-home {
+    padding-top: 12rem;
+  }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -922,6 +1153,11 @@ footer {
     height: 25rem;
     width: 25rem;
   }
+
+  /* NOVO */
+  .img-home {
+    padding-top: 12rem;
+  }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -939,50 +1175,9 @@ footer {
     height: 25rem;
     width: 25rem;
   }
-}
 
-/* NOVO */
-
-.imagem-logo {
-  height: 4rem;
-  width: auto;
-}
-
-.nav-item .nav-link {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-  text-transform: uppercase;
-
-  /* Purple  */
-  color: #b311cd;
-}
-
-a .logo {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.navbar {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-}
-
-.navbar .container {
-  padding-right: 0rem;
-}
-
-.yellow-bottom-align .nav-link {
-  padding: 1.8rem 1rem;
-}
-
-.nav-item .yellow-bottom {
-  background-color: #b311cd !important;
-}
-
-.navbar .container {
-  max-width: 100%;
+  /* NOVO */
+  .home-text-area .img-home {
+    padding-top: 12rem;
+  }
 }
