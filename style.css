@@ -200,6 +200,10 @@ h5,
   text-align: start;
 }
 
+.home-text-purple h1 {
+  color: #5c5c5c;
+}
+
 .home-text {
   padding-top: 2rem;
   z-index: 2 !important;
@@ -504,6 +508,22 @@ footer {
 
 /*============= NOVO================== */
 
+/* materiais responsivos */
+.recursos-imgs p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* Grey */
+  color: #5c5c5c;
+}
+
+/* materiais responsivos */
+
 .imagem-logo {
   height: 70px;
   width: 175px;
@@ -724,6 +744,11 @@ h3,
     height: 56px;
     width: 140px;
   }
+
+  .recursos-imgs p {
+    font-size: 11px;
+    line-height: 150%;
+  }
 }
 
 /* // X-Small devices (portrait phones, less than 576px) */
@@ -880,6 +905,10 @@ h3,
 
   .traco-azul {
     border: 3px solid #60c8ff;
+  }
+  .recursos-imgs p {
+    font-size: 11px;
+    line-height: 150%;
   }
 }
 
